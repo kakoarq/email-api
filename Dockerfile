@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Build the application
-RUN ./mvnw package -DskipTests
+RUN sudo ./mvnw package -DskipTests
 
 # Expose the port that your Spring Boot app will run on
 EXPOSE 8080
