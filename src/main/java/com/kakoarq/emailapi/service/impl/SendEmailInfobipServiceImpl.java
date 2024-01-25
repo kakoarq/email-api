@@ -31,7 +31,7 @@ public class SendEmailInfobipServiceImpl implements SendEmailInfobipService {
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("from", fromEmail)
                 .addFormDataPart("to", fromEmail)
-                .addFormDataPart("subject", emailReceiver.getFirstName() + " "+ emailReceiver.getLastName())
+                .addFormDataPart("subject", emailReceiver.getFirstName() + " "+ emailReceiver.getLastName() + " Entrou em contato no dia")
                 .addFormDataPart("text", emailReceiver.getBodyEmail())
                 .build();
 
